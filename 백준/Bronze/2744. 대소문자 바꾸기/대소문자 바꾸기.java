@@ -7,7 +7,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();
 		for(int i=0; i<str.length(); i++) {
-			char c = str.charAt(i); // scanner는 char를 받을 수 없음. string을 받고 char로 변환
+			char c = str.charAt(i); // BufferdReader도 char를 못받나봐
 			if(Character.isUpperCase(c)) {
 				System.out.print(Character.toLowerCase(c));
 			}else
