@@ -1,14 +1,18 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main {
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		int[] a = new int[6];
-		int[] b = {1,1,2,2,2,8};
-		for(int i=0; i<a.length; i++) {
-			a[i] = sc.nextInt();
-			System.out.print(b[i]-a[i]+" ");
+	public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringBuilder sb = new StringBuilder();
+        int[] b = {1,1,2,2,2,8};
+		for(int i=0; i<b.length; i++) {
+			int a = Integer.parseInt(st.nextToken());
+			sb.append(b[i]-a+" ");
 		}
-	}
+		System.out.print(sb);
+    }
 }
