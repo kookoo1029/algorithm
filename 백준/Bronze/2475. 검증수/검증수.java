@@ -7,7 +7,7 @@ public class Main {
 		long sum=0;
 		for(int i=0; i<5; i++) {
 			long N = sc.nextInt();
-			sum += N*N;
+			sum += Math.pow(N, 2);
 		}
 		System.out.println(sum%10);
 	}
