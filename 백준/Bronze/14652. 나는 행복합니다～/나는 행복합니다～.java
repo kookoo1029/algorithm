@@ -7,12 +7,6 @@ public class Main {
 		int N = sc.nextInt();
 		int M = sc.nextInt();
 		int K = sc.nextInt();
-		for(int i=0; i<N; i++) {
-			for(int j=0; j<M; j++) {
-				if(i*M+j==K) {
-					System.out.print(i + " " + j);
-				}
-			}
-		}
+		System.out.println(K/M + " " + K%M);
 	}
 }
