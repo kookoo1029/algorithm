@@ -4,15 +4,11 @@ public class Main {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int[] arr = new int[5];
+		int score = 0;
 		int sum = 0;
 		for(int i=0; i<5; i++) {
-			arr[i] = sc.nextInt();
-			if(arr[i]<40) {
-				sum+=40;
-			}else {
-				sum+=arr[i];
-			}
+			score=sc.nextInt();
+			sum += score>40 ? score:40;
 		}
 		System.out.println(sum/5);
 	}
